@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_QCUEwJxkEee8PKRxq6FhZw" name="NewModel">
+  <packagedElement xmi:type="uml:Component" xmi:id="_RbqdUJxkEee8PKRxq6FhZw" name="Authentication">
+    <interfaceRealization xmi:id="_nrsw4JxkEee8PKRxq6FhZw" client="_RbqdUJxkEee8PKRxq6FhZw" supplier="_mGDowJxkEee8PKRxq6FhZw" contract="_mGDowJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_SrYYwJxkEee8PKRxq6FhZw" name="UserPassword">
+    <generalization xmi:id="_kfEc0JxkEee8PKRxq6FhZw" general="_RbqdUJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_T5H-QJxkEee8PKRxq6FhZw" name="Pin">
+    <generalization xmi:id="_kzDv0JxkEee8PKRxq6FhZw" general="_RbqdUJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_UdNiwJxkEee8PKRxq6FhZw" name="DigitalIdentity">
+    <generalization xmi:id="_lEcawJxkEee8PKRxq6FhZw" general="_RbqdUJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_YlauQJxkEee8PKRxq6FhZw" name="BiometricRecognition">
+    <generalization xmi:id="_lUdzwJxkEee8PKRxq6FhZw" general="_RbqdUJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_mGDowJxkEee8PKRxq6FhZw" name="IAuthentication"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_vs_GwJxkEee8PKRxq6FhZw" name="Encryption">
+    <interfaceRealization xmi:id="_F7fwUJxlEee8PKRxq6FhZw" client="_vs_GwJxkEee8PKRxq6FhZw" supplier="_DoPUQJxlEee8PKRxq6FhZw" contract="_DoPUQJxlEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_xEzOQJxkEee8PKRxq6FhZw" name="RSA">
+    <generalization xmi:id="_AOH90JxlEee8PKRxq6FhZw" general="_vs_GwJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_xxlbwJxkEee8PKRxq6FhZw" name="AES">
+    <generalization xmi:id="_AecRwJxlEee8PKRxq6FhZw" general="_vs_GwJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_yYMv0JxkEee8PKRxq6FhZw" name="ECDSA">
+    <generalization xmi:id="_AvYQwJxlEee8PKRxq6FhZw" general="_vs_GwJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_zKd6QJxkEee8PKRxq6FhZw" name="DSA">
+    <generalization xmi:id="_A_Qf0JxlEee8PKRxq6FhZw" general="_vs_GwJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_z0DCwJxkEee8PKRxq6FhZw" name="TDEA">
+    <generalization xmi:id="_BRW8cJxlEee8PKRxq6FhZw" general="_vs_GwJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_0-6TYJxkEee8PKRxq6FhZw" name="SesionManager">
+    <interfaceRealization xmi:id="_4wg8wJxkEee8PKRxq6FhZw" client="_0-6TYJxkEee8PKRxq6FhZw" supplier="_3TDgQJxkEee8PKRxq6FhZw" contract="_3TDgQJxkEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_3TDgQJxkEee8PKRxq6FhZw" name="Session"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_5LmWQJxkEee8PKRxq6FhZw" client="_RbqdUJxkEee8PKRxq6FhZw" supplier="_3TDgQJxkEee8PKRxq6FhZw"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_DoPUQJxlEee8PKRxq6FhZw" name="IEncryption"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_JtpMQJxlEee8PKRxq6FhZw" name="EncryptionManager">
+    <interfaceRealization xmi:id="_O-ezwJxlEee8PKRxq6FhZw" client="_JtpMQJxlEee8PKRxq6FhZw" supplier="_NRTgQJxlEee8PKRxq6FhZw" contract="_NRTgQJxlEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_KsD8UJxlEee8PKRxq6FhZw" name="KeyRepository">
+    <interfaceRealization xmi:id="_RNnk0JxlEee8PKRxq6FhZw" client="_KsD8UJxlEee8PKRxq6FhZw" supplier="_PzqIQJxlEee8PKRxq6FhZw" contract="_PzqIQJxlEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_NRTgQJxlEee8PKRxq6FhZw" name="EncryptMng"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_PSxowJxlEee8PKRxq6FhZw" client="_vs_GwJxkEee8PKRxq6FhZw" supplier="_NRTgQJxlEee8PKRxq6FhZw"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_PzqIQJxlEee8PKRxq6FhZw" name="Keys"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_RgPl4JxlEee8PKRxq6FhZw" client="_vs_GwJxkEee8PKRxq6FhZw" supplier="_PzqIQJxlEee8PKRxq6FhZw"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_aHcsQJxlEee8PKRxq6FhZw" name="Hashing">
+    <interfaceRealization xmi:id="_hw9bUJxlEee8PKRxq6FhZw" client="_aHcsQJxlEee8PKRxq6FhZw" supplier="_feBIUJxlEee8PKRxq6FhZw" contract="_feBIUJxlEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_bQ61wJxlEee8PKRxq6FhZw" name="MD5">
+    <generalization xmi:id="_ghO40JxlEee8PKRxq6FhZw" general="_aHcsQJxlEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_cc3rgJxlEee8PKRxq6FhZw" name="SHA-1">
+    <generalization xmi:id="_gzwzQJxlEee8PKRxq6FhZw" general="_aHcsQJxlEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_dEXJUJxlEee8PKRxq6FhZw" name="SHA-2">
+    <generalization xmi:id="_hGT70JxlEee8PKRxq6FhZw" general="_aHcsQJxlEee8PKRxq6FhZw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_feBIUJxlEee8PKRxq6FhZw" name="IHashing"/>
+</uml:Model>

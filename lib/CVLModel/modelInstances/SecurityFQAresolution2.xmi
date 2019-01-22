@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cvlmodel:ResolutionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cvlmodel="http://www.example.org/CVLModel" xsi:schemaLocation="http://www.example.org/CVLModel ../model/CVLModel.ecore" name="FQAsResolutionModel">
+  <resolutions xsi:type="cvlmodel:ChoiceResolution" name="Security" decision="true">
+    <resolvedVSpec xsi:type="cvlmodel:Choice" href="SecurityFQA2.xmi#Security"/>
+  </resolutions>
+  <resolutions xsi:type="cvlmodel:ChoiceResolution" name="FQA" decision="true">
+    <resolvedVSpec xsi:type="cvlmodel:Choice" href="SecurityFQA2.xmi#FQA"/>
+  </resolutions>
+  <resolutions xsi:type="cvlmodel:ChoiceResolution" name="Authentication" decision="true">
+    <resolvedVSpec xsi:type="cvlmodel:Choice" href="SecurityFQA2.xmi#Authentication"/>
+  </resolutions>
+  <resolutions xsi:type="cvlmodel:ChoiceResolution" name="UserPassword" decision="true">
+    <resolvedVSpec xsi:type="cvlmodel:Choice" href="SecurityFQA2.xmi#UserPassword"/>
+  </resolutions>
+  <resolutions xsi:type="cvlmodel:ChoiceResolution" name="Pin">
+    <resolvedVSpec xsi:type="cvlmodel:Choice" href="SecurityFQA2.xmi#Pin"/>
+  </resolutions>
+  <resolvedVSpec href="SecurityFQA2.xmi#//@vspecTree"/>
+</cvlmodel:ResolutionModel>

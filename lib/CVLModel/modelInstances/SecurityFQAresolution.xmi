@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cvlmodel:ResolutionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cvlmodel="http://www.example.org/CVLModel" name="FQAResolution">
+  <resolutions xsi:type="cvlmodel:ChoiceResolution" name="" decision="true">
+    <resolvedVSpec xsi:type="cvlmodel:Choice" href="SecurityFQA.xmi#Security"/>
+  </resolutions>
+  <resolvedVSpec href="SecurityFQA.xmi#//@vspecTree"/>
+</cvlmodel:ResolutionModel>

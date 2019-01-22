@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ASCII"?>
+<cvlmodel:CVLModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cvlmodel="http://www.example.org/CVLModel" xsi:schemaLocation="http://www.example.org/CVLModel ../model/CVLModel.ecore" name="FQAsModel">
+  <vspecTree root="FQA">
+    <vspecs xsi:type="cvlmodel:Choice" name="FQA" children="Security">
+      <groupMultiplicity min="1" children="Security"/>
+    </vspecs>
+    <vspecs xsi:type="cvlmodel:Choice" name="Security" parent="FQA" children="Authentication">
+      <groupMultiplicity min="1" children="Authentication"/>
+    </vspecs>
+    <vspecs xsi:type="cvlmodel:Choice" name="Authentication" parent="Security" children="Pin UserPassword">
+      <groupMultiplicity min="1" children="Pin UserPassword"/>
+    </vspecs>
+    <vspecs xsi:type="cvlmodel:Choice" name="Pin" parent="Authentication"/>
+    <vspecs xsi:type="cvlmodel:Choice" name="UserPassword" parent="Authentication"/>
+  </vspecTree>
+  <variationPoints xsi:type="cvlmodel:ObjectExistence" binding="UserPassword" modelTransformationURL="C:\Users\JoseMiguel\Desktop\ObjectExistenceUML.asm" modelTransformationSourceURL="C:\Users\JoseMiguel\Desktop\ObjectExistenceUML.atl" name="UserPasswordExistence" negativeVariability="true" target="UserPassword">
+    <references key="target">
+      <value id="UserPassword"/>
+    </references>
+  </variationPoints>
+  <variationPoints xsi:type="cvlmodel:ObjectExistence" binding="Pin" modelTransformationURL="C:\Users\JoseMiguel\Desktop\ObjectExistenceUML.atl" modelTransformationSourceURL="C:\Users\JoseMiguel\Desktop\ObjectExistenceUML.atl" name="PinExistence" negativeVariability="true" target="Pin">
+    <references key="target">
+      <value id="Pin"/>
+    </references>
+  </variationPoints>
+</cvlmodel:CVLModel>

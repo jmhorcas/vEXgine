@@ -1,0 +1,17 @@
+-- @atlcompiler atl2010
+-- @nsURI UML=http://www.eclipse.org/uml2/5.0.0/UML
+-- @path Params=/ParamsMetamodel/src/CVLParams.ecore
+
+module ObjectExistenceUML;
+create OUT : UML refining IN : UML, PARAMS : Params;
+
+-- Name
+helper def: ElementName : String = Params!MOFReference.allInstances()->any(e | e.key = 'target').value;
+
+
+rule deleteElement {
+  from
+      e : UML!NamedElement (e.name = thisModule.ElementName)
+  to
+      drop
+}

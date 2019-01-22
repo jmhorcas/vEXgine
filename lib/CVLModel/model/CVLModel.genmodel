@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/CVLModel/src" modelPluginID="CVLModel" modelName="CVLModel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="8.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>CVLModel.ecore</foreignModel>
+  <genPackages prefix="CVLModel" disposableProviderFactory="true" ecorePackage="CVLModel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="CVLModel.ecore#//PrimitiveTypeEnum">
+      <genEnumLiterals ecoreEnumLiteral="CVLModel.ecore#//PrimitiveTypeEnum/String"/>
+      <genEnumLiterals ecoreEnumLiteral="CVLModel.ecore#//PrimitiveTypeEnum/Boolean"/>
+      <genEnumLiterals ecoreEnumLiteral="CVLModel.ecore#//PrimitiveTypeEnum/Integer"/>
+      <genEnumLiterals ecoreEnumLiteral="CVLModel.ecore#//PrimitiveTypeEnum/Real"/>
+      <genEnumLiterals ecoreEnumLiteral="CVLModel.ecore#//PrimitiveTypeEnum/UnlimitedNatural"/>
+    </genEnums>
+    <genClasses ecoreClass="CVLModel.ecore#//VSpec">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//VSpec/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//VSpec/mandatory"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VSpec/groupMultiplicity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VSpec/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VSpec/children"/>
+      <genOperations ecoreOperation="CVLModel.ecore#//VSpec/isRoot"/>
+      <genOperations ecoreOperation="CVLModel.ecore#//VSpec/isCloneable"/>
+      <genOperations ecoreOperation="CVLModel.ecore#//VSpec/isClon"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//Choice"/>
+    <genClasses ecoreClass="CVLModel.ecore#//Multiplicity">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//Multiplicity/min"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//Multiplicity/max"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CVLModel.ecore#//Multiplicity/children"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//Variable">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//Variable/type"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//VClassifier">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VClassifier/instanceMultiplicity"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//VSpecResolution">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VSpecResolution/resolvedVSpec"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//VSpecResolution/name"/>
+      <genOperations ecoreOperation="CVLModel.ecore#//VSpecResolution/isPossitivelyResolved"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//ChoiceResolution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//ChoiceResolution/decision"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//VariableResolution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//VariableResolution/value"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//VClassifierResolution">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//VClassifierResolution/instance"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="CVLModel.ecore#//VariationPoint">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VariationPoint/binding"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VariationPoint/references"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//VariationPoint/modelTransformationURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//VariationPoint/modelTransformationSourceURL"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//VariationPoint/name"/>
+      <genOperations/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//MOFRef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//MOFRef/id"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//StringToMOFRefMap">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//StringToMOFRefMap/key"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//ObjectExistence">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//ObjectExistence/target"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//VSpecTree">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VSpecTree/vspecs"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CVLModel.ecore#//VSpecTree/root"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//ResolutionModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CVLModel.ecore#//ResolutionModel/resolutions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference CVLModel.ecore#//ResolutionModel/resolvedVSpec"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//ResolutionModel/name"/>
+    </genClasses>
+    <genClasses ecoreClass="CVLModel.ecore#//CVLModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CVLModel.ecore#//CVLModel/vspecTree"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference CVLModel.ecore#//CVLModel/variationPoints"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute CVLModel.ecore#//CVLModel/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
